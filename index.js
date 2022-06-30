@@ -11,9 +11,9 @@ class Timer {
 		this.s.addEventListener('click', this.start);
 	}
 
-	start() {
+	start = () => {
 		console.log('Hi there');
-	}
+	};
 }
 
 const timer = new Timer(durationInput, startBtn, pauseBtn);
