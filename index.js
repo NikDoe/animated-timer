@@ -22,9 +22,16 @@ class Timer {
 	};
 
 	tick = () => {
-		const timeRemaining = parseFloat(this.d.value);
-		this.d.value = timeRemaining - 1;
+		this.timeRemaining = this.timeRemaining - 1;
 	};
+
+	get timeRemaining() {
+		return parseFloat(this.d.value);
+	}
+
+	set timeRemaining(time) {
+		this.d.value = time;
+	}
 }
 
 const timer = new Timer(durationInput, startBtn, pauseBtn);
