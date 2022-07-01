@@ -22,7 +22,8 @@ class Timer {
 	};
 
 	tick = () => {
-		console.log('tick');
+		const timeRemaining = parseFloat(this.d.value);
+		this.d.value = timeRemaining - 1;
 	};
 }
 
