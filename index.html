@@ -3,22 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Timer</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<svg width="400" height="400">
-	<circle
-			r="195"
-			cx="200"
-			cy="200"
-			fill="transparent"
-			stroke="green"
-			stroke-width="10"
-			transform="rotate(-90 200 200)">
-	</circle>
-</svg>
-<input id="duration" value="30">
-<button id="start">start</button>
-<button id="pause">pause</button>
+<div class="timer">
+	<div class="controls">
+		<input id="duration" value="3"/>
+		<div>
+			<button id="start">play</button>
+			<button id="pause">pause</button>
+		</div>
+	</div>
+	<svg class="dial">
+		<circle
+				fill="transparent"
+				stroke="green"
+				stroke-width="2"
+				r="199"
+				cx="200"
+				cy="200"
+				transform="rotate(-90 200 200)"
+		/>
+	</svg>
+</div>
 <script src="timer.js"></script>
 <script src="index.js"></script>
 </body>
